@@ -110,3 +110,6 @@ CALL addtocart(1,1,1);
 CALL addtocart(1,5,2);
 
 CALL addtocart(2,4,3);
+
+/* This is multi line
+comment*/
