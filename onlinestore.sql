@@ -111,4 +111,4 @@ CALL addtocart(1,5,2);
 
 CALL addtocart(2,4,3);
 
-/* New comment from student */
+/* New comment from student updated */
