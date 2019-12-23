@@ -1,5 +1,5 @@
 
-package nccs.onlinestore;
+package nccs.onlinestore.model;
 
 public class Product {
     

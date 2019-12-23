@@ -16,27 +16,18 @@ public class DBConnection {
     final static String password = "root";
 
     public static Connection getConnection() throws SQLException {
-        try {
-            if (connection == null || connection.isClosed()) {
-                connection = DriverManager.getConnection("jdbc:" + subProtocal + ":" + host + ":" + port + "/" + database, userName, password);
-            }
-        } catch (SQLException ex) {
-            System.err.println("Error while setting up a connection with MySQL Server.");
-            throw ex;
+        if (connection == null || connection.isClosed()) {
+            connection = DriverManager.getConnection("jdbc:" + subProtocal + ":" + host + ":" + port + "/" + database, userName, password);
         }
+
         return connection;
     }
 
     public static void closeConnection() throws SQLException {
         if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException ex) {
-                System.err.println("Error closing the DB connection.");
-                throw ex;
-            }
+            connection.close();
         }
 
     }
-    
+
 }

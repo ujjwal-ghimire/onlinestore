@@ -1,5 +1,7 @@
 package nccs.onlinestore;
 
+import nccs.onlinestore.dao.ProductRepository;
+import nccs.onlinestore.model.Product;
 import java.util.List;
 
 public class MainApp {
