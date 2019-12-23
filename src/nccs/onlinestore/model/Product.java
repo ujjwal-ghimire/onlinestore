@@ -23,7 +23,35 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" + "product_id=" + product_id + ", category_id=" + category_id + ", name=" + name + ", price=" + price + ", discount=" + discount + ", unit=" + unit + ", stock=" + stock + '}';
+        return "" + product_id +" : \t" +  name + "\t Rs." + price + " " + discount + "% discount available :-> " + stock + "" + unit;
+    }
+
+    public int getProduct_id() {
+        return product_id;
+    }
+
+    public int getCategory_id() {
+        return category_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public int getDiscount() {
+        return discount;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public int getStock() {
+        return stock;
     }
     
     

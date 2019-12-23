@@ -1,22 +1,19 @@
 package nccs.onlinestore;
 
-import nccs.onlinestore.dao.ProductRepository;
-import nccs.onlinestore.model.Product;
-import java.util.List;
+import nccs.onlinestore.controller.CustomerController;
+import nccs.onlinestore.model.Customer;
+import nccs.onlinestore.view.ClientView;
 
 public class MainApp {
 
     public static void main(String[] args) throws Exception {
-        
-        ProductRepository productRepository = new ProductRepository();
-        
-        List<Product> products = productRepository.getAllProducts();
-        
-        System.out.println("All Products:");
-        for(Product product : products) {
-            System.out.println(product);
-        }   
-        
+
+         ClientView clientView = new ClientView();
+         
+        CustomerController customerController = new CustomerController();
+        Customer currentCustomer = customerController.login(clientView.logIn());
+        System.out.println("Welcome " + currentCustomer.getFirstName());
+        clientView.mainPage(currentCustomer);
     }
-    
+
 }
