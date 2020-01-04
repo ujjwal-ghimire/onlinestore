@@ -17,7 +17,8 @@ public class DBConnection {
 
     public static Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {
-            connection = DriverManager.getConnection("jdbc:" + subProtocal + ":" + host + ":" + port + "/" + database, userName, password);
+            connection = DriverManager.getConnection("jdbc:" + subProtocal + ":"
+                    + host + ":" + port + "/" + database, userName, password);
         }
 
         return connection;

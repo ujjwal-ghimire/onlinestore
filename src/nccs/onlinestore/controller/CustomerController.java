@@ -8,7 +8,7 @@ package nccs.onlinestore.controller;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import nccs.onlinestore.dao.CustomerRepository;
+import nccs.onlinestore.repository.CustomerRepository;
 import nccs.onlinestore.model.Customer;
 
 /**
@@ -17,17 +17,22 @@ import nccs.onlinestore.model.Customer;
  */
 public class CustomerController {
     
-    public Customer login(String email) throws SQLException {
+    private Customer currentUser = null;
+    
+    public Customer getCurrentUser() {
+        return currentUser;
+    }
+    public boolean login(String email) throws SQLException {
         
         CustomerRepository customerRepository = new CustomerRepository();
         List<Customer> customers = customerRepository.getCustomers();
         
         for ( Customer customer: customers) {
             if ( customer.getEmail().equals(email)) {
-                return customer;
+                currentUser = customer;
             }
         }
-        return null;
+        return currentUser != null;
     }
     
 }
