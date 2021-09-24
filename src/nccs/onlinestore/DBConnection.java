@@ -13,7 +13,7 @@ public class DBConnection {
     final static String port = "3306";
     final static String database = "onlinestore";
     final static String userName = "root";
-    final static String password = "root";
+    final static String password = "";
 
     public static Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {

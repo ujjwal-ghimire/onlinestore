@@ -3,18 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/model/Customer.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/dao/CustomerRepository.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/view/ClientView.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/MainApp.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/dao/CategoryRepository.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/model/Category.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/DBConnection.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/dao/ProductRepository.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/dao/CartRepository.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/controller/CustomerController.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/model/Cart.java</file>
-            <file>file:/C:/Users/spectre/Documents/NetBeansProjects/Onlinestore/src/nccs/onlinestore/model/Product.java</file>
+            <file>file:/E:/nccs/onlinestore/src/nccs/onlinestore/view/ClientView.java</file>
+            <file>file:/E:/nccs/onlinestore/src/nccs/onlinestore/MainApp.java</file>
+            <file>file:/E:/nccs/onlinestore/src/nccs/onlinestore/controller/CartController.java</file>
+            <file>file:/E:/nccs/onlinestore/src/nccs/onlinestore/repository/CategoryRepository.java</file>
         </group>
     </open-files>
 </project-private>
